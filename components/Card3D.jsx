@@ -1,17 +1,17 @@
 "use client";
 import { useRef } from "react";
 import Link from "next/link";
-import { motion, useMotionValue, useSpring, useTransform, useScroll, useReducedMotion } from "motion/react";
+import { motion, useMotionValue, useSpring, useTransform, useReducedMotion } from "motion/react";
 
 /**
  * A glass slab with real thickness. Stacked layers behind the face show as an
- * extruded edge when the card tilts (pointer on desktop, scroll on phones).
+ * extruded edge when the card tilts under the mouse.
  *   rest: resting tilt in degrees, e.g. { x: 8, y: -14 } for a showcase angle
  *   depth: slab thickness in px
  */
 export default function Card3D({
   children, className = "", faceClassName = "", href, external, depth = 14, tilt = 9,
-  rest = { x: 0, y: 0 }, scrollTilt = 7, tone = "plum", as = "div", ...rest_props
+  rest = { x: 0, y: 0 }, scrollTilt: _unused, tone = "plum", as = "div", ...rest_props
 }) {
   const ref = useRef(null);
   const reduce = useReducedMotion();
@@ -20,10 +20,7 @@ export default function Card3D({
   const sx = useSpring(px, { stiffness: 160, damping: 18, mass: 0.6 });
   const sy = useSpring(py, { stiffness: 160, damping: 18, mass: 0.6 });
 
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
-  const scrollX = useTransform(scrollYProgress, [0, 0.5, 1], [scrollTilt, 0, -scrollTilt]);
-
-  const rotateX = useTransform([sy, scrollX], ([y, s]) => (reduce ? rest.x : rest.x + s - y * tilt));
+  const rotateX = useTransform(sy, (y) => (reduce ? rest.x : rest.x - y * tilt));
   const rotateY = useTransform(sx, (x) => (reduce ? rest.y : rest.y + x * tilt));
   const glareX = useTransform(sx, (x) => `${50 + x * 50}%`);
   const glareY = useTransform(sy, (y) => `${50 + y * 50}%`);
@@ -36,7 +33,7 @@ export default function Card3D({
   };
   const onLeave = () => { px.set(0); py.set(0); };
 
-  const layers = Math.max(2, Math.round(depth / 2));
+  const layers = Math.max(2, Math.min(4, Math.round(depth / 4)));
   const body = (
     <motion.div className="c3d-body" style={{ rotateX, rotateY }}>
       {Array.from({ length: layers }, (_, i) => (

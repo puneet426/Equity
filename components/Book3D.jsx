@@ -12,11 +12,15 @@ export default function Book3D() {
     let cancelled = false;
     const test = document.createElement("canvas");
     if (!(test.getContext("webgl2") || test.getContext("webgl"))) return;
-    import("three").then((THREE) => {
+    // The flat logo shows first; three.js (the heaviest file) downloads once the page itself has loaded.
+    const start = () => import("three").then((THREE) => {
       if (cancelled || !host.current) return;
       try { dispose = init(THREE, host.current, () => setLive(true)); } catch (e) { console.warn("3D book disabled", e); }
     });
-    return () => { cancelled = true; dispose(); };
+    const idle = (fn) => ("requestIdleCallback" in window ? requestIdleCallback(fn, { timeout: 2500 }) : setTimeout(fn, 600));
+    const onLoad = () => idle(start);
+    if (document.readyState === "complete") onLoad(); else addEventListener("load", onLoad, { once: true });
+    return () => { cancelled = true; removeEventListener("load", onLoad); dispose(); };
   }, []);
 
   return (
@@ -32,7 +36,7 @@ function init(THREE, host, onLive) {
   const gold = 0xf9c26a;
 
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: "high-performance" });
-  renderer.setPixelRatio(Math.min(devicePixelRatio, phone ? 1.75 : 2));
+  renderer.setPixelRatio(Math.min(devicePixelRatio, phone ? 1.5 : 1.75));
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1.1;

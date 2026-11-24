@@ -4,7 +4,6 @@ import "./extras.css";
 import Background from "@/components/Background";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import SmoothScroll from "@/components/SmoothScroll";
 import { D, TAGLINE } from "@/lib/site";
 
 const display = Montserrat({ subsets: ["latin"], weight: ["300", "500", "600", "700", "800", "900"], variable: "--f-display", display: "swap" });
@@ -49,7 +48,6 @@ export default function RootLayout({ children }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgLd) }} />
         <a className="skip" href="#main">Skip to content</a>
         <Background />
-        <SmoothScroll />
         <Header />
         <main id="main">{children}</main>
         <Footer />

@@ -1,11 +1,7 @@
-"use client";
-import { motion, useReducedMotion } from "motion/react";
 import Book3D from "./Book3D";
 import Card3D from "./Card3D";
 import { D, TAGLINE, tel, topper } from "@/lib/site";
 import { Phone, Arrow, Stars } from "./Icons";
-
-const ease = [0.16, 1, 0.3, 1];
 
 function Dial() {
   const ticks = Array.from({ length: 72 }, (_, i) => {
@@ -37,38 +33,33 @@ const LINES = [
 ];
 
 export default function Hero() {
-  const reduce = useReducedMotion();
-  const init = (o) => (reduce ? false : o);
   return (
     <section className="hero" aria-labelledby="hero-title">
       <div className="wrap hero-grid">
         <div className="hero-copy">
-          <motion.p className="pill" initial={init({ opacity: 0, y: 16 })} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease }}>
+          <p className="pill">
             <i className="pill-dot" />CA and CS coaching in Lalpur, Ranchi
-          </motion.p>
+          </p>
           <h1 id="hero-title" className="hero-title">
             {LINES.map(([txt, cls], i) => (
               <span className="line-mask" key={i}>
-                <motion.span className={`line grad-txt ${cls}`} initial={init({ y: "110%", rotate: 4 })} animate={{ y: "0%", rotate: 0 }}
-                  transition={{ duration: 1.1, delay: 0.15 + i * 0.12, ease }}>
-                  {txt}
-                </motion.span>
+                <span className={`line grad-txt ${cls}`}>{txt}</span>
               </span>
             ))}
           </h1>
-          <motion.p className="lede" initial={init({ opacity: 0, y: 20 })} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.55, ease }}>
+          <p className="lede">
             <b>Foundation to Final. CSEET to Professional.</b> {D.faculty.length} teachers, including practising CAs, CSs and a High Court advocate, in H Square Mall, Lalpur.
-          </motion.p>
-          <motion.div className="actions" initial={init({ opacity: 0, y: 20 })} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.7, ease }}>
+          </p>
+          <div className="actions">
             <a className="btn btn--gold btn--shine" href={tel}><Phone />Book a free counselling call</a>
             <a className="btn btn--glass" href="#courses">See the courses<Arrow /></a>
-          </motion.div>
-          <motion.a className="rating" href={D.MAP_LINK} target="_blank" rel="noopener" initial={init({ opacity: 0 })} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.95 }}>
+          </div>
+          <a className="rating" href={D.MAP_LINK} target="_blank" rel="noopener">
             <b>{D.GOOGLE_RATING}</b><Stars /><span>{D.GOOGLE_REVIEWS} Google reviews</span>
-          </motion.a>
+          </a>
         </div>
 
-        <motion.div className="stage" initial={init({ opacity: 0, scale: 0.92 })} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1.4, delay: 0.2, ease }}>
+        <div className="stage">
           <div className="stage-halo" aria-hidden="true" />
           <div className="dial-wrap" aria-hidden="true"><Dial /></div>
           <Book3D />
@@ -83,7 +74,7 @@ export default function Hero() {
             <span>by the institute&apos;s own count</span>
           </Card3D>
           <p className="stage-tag">{TAGLINE}</p>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

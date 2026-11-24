@@ -17,7 +17,7 @@ export default function TiltPhoto() {
         <motion.figure className="photo" style={{ rotateX, scale }}>
           <motion.div className="photo-img" style={{ y: imgY }}>
             <Image src="/img/students.webp" alt="Around sixty Equity Classes students in navy institute T-shirts pose together on a green turf court beneath an Equity Classes banner"
-              fill sizes="(max-width: 1300px) 100vw, 1260px" quality={90} />
+              fill sizes="(max-width: 1300px) 100vw, 1260px" quality={75} />
           </motion.div>
           <figcaption><span className="pill-dot" />Equity Classes students, Ranchi</figcaption>
         </motion.figure>
