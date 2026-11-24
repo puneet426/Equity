@@ -442,24 +442,12 @@ a.c3d:hover .c3d-face { box-shadow: inset 0 1px 0 #ffffff50, inset 0 0 50px #f9c
 .ftr-word { font: 900 clamp(1.6rem, 1.2rem + 1.6vw, 2.4rem)/1 var(--f-display); letter-spacing: -.02em; background: var(--grad-white); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .ftr-word span { font-weight: 300; }
 .ftr-tag { margin-top: .4rem; font: 600 .9rem/1 var(--f-display); color: var(--gold); }
-.socials { position: relative; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .8rem; margin: clamp(2rem, 4vw, 3.2rem) 0; }
-.social { display: flex; align-items: center; gap: .8rem; height: 100%; padding: .8rem; border-radius: 20px; background: linear-gradient(160deg, #ffffff10, #ffffff03);
-  box-shadow: inset 0 1px 0 #ffffff18; transition: transform .45s var(--ease), box-shadow .4s, background .4s; }
-.social-ico { flex: none; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 15px; color: var(--head); transition: transform .5s var(--ease);
-  box-shadow: inset 0 1px 0 #ffffff55, 0 4px 0 #0006, 0 12px 22px -8px var(--glow, #0008); }
-.social-ico svg { width: 23px; height: 23px; }
-.social--ig .social-ico { background: radial-gradient(circle at 30% 110%, #ffd776 0%, #f9a13a 20%, #e1306c 50%, #a42bb8 75%, #5b51d8 100%); --glow: #e1306c; }
-.social--wa .social-ico { background: linear-gradient(180deg, #5df58a, #22b15a); --glow: #25d366; }
-.social--ph .social-ico { background: linear-gradient(180deg, #ffe3ad, #f9c26a); color: var(--on-gold); --glow: #f9c26a; }
-.social--ml .social-ico { background: linear-gradient(180deg, #e3d0f5, #a57cd6); color: #2a0336; --glow: #c9a8ee; }
-.social--mp .social-ico { background: linear-gradient(180deg, #7ab3ff, #3a6fe0); --glow: #4a86f0; }
-.social--lt .social-ico { background: linear-gradient(180deg, #7ef58f, #3fbf55); color: #10300f; --glow: #43e55e; }
-.social-txt { display: grid; line-height: 1.25; }
-.social-txt b { font: 700 .92rem/1.2 var(--f-display); color: var(--head); }
-.social-txt small { font-size: .78rem; color: var(--ink-3); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.social:hover { transform: translateY(-6px); background: linear-gradient(160deg, #ffffff1c, #ffffff06); box-shadow: inset 0 1px 0 #ffffff26, 0 22px 40px -20px var(--glow, #000); }
-.social:hover .social-ico { transform: rotate(-8deg) scale(1.08); }
-.social--ig { --glow: #e1306c; } .social--wa { --glow: #25d366; } .social--ph { --glow: #f9c26a; } .social--ml { --glow: #c9a8ee; } .social--mp { --glow: #4a86f0; } .social--lt { --glow: #43e55e; }
+.socials { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin: clamp(1.8rem, 3.5vw, 2.6rem) 0; padding: 0; list-style: none; }
+.social { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; color: var(--gold);
+  background: radial-gradient(circle at 50% 0%, #ffffff14, #ffffff05 70%); box-shadow: inset 0 0 0 1.5px #f9c26a59, inset 0 1px 0 #ffffff1f;
+  transition: color .35s, background .35s, box-shadow .35s, transform .45s var(--ease); }
+.social svg { width: 22px; height: 22px; }
+.social:hover, .social:focus-visible { color: var(--on-gold); background: var(--grad-gold); box-shadow: inset 0 0 0 1.5px #ffe3ad, 0 14px 30px -12px #f9c26aaa; transform: translateY(-4px); }
 .ftr-cols { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem; }
 .ftr-cols h2 { margin-bottom: .9rem; font: 700 .75rem/1 var(--f-display); letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
 .ftr-cols p, .ftr-cols li { font-size: .95rem; color: var(--ink-2); line-height: 1.7; }
@@ -529,7 +517,6 @@ a.c3d:hover .c3d-face { box-shadow: inset 0 1px 0 #ffffff50, inset 0 0 50px #f9c
 /* ---------------- responsive ---------------- */
 @media (max-width: 1100px) {
   .hdr-call { display: none; }
-  .socials { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .closer .c3d-face { grid-template-columns: auto 1fr; }
   .closer .actions { grid-column: 1 / -1; }
 }
@@ -593,9 +580,7 @@ a.c3d:hover .c3d-face { box-shadow: inset 0 1px 0 #ffffff50, inset 0 0 50px #f9c
   .map { height: 240px; }
   .closer .c3d-face { grid-template-columns: 1fr; justify-items: start; }
   .closer-logo { width: 100px; }
-  .socials { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; }
-  .social { padding: .65rem; gap: .65rem; }
-  .social-ico { width: 42px; height: 42px; border-radius: 13px; }
+  .social { width: 48px; height: 48px; }
   .ftr-top .btn { width: 100%; }
   .ftr-cols { gap: 1.6rem 1rem; }
   .ftr-base { flex-direction: column; }
@@ -614,8 +599,6 @@ a.c3d:hover .c3d-face { box-shadow: inset 0 1px 0 #ffffff50, inset 0 0 50px #f9c
 @media (max-width: 380px) {
   .hero-title { font-size: 2.2rem; }
   .float-card { max-width: 150px; }
-  .socials { grid-template-columns: 1fr 1fr; }
-  .social-txt small { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {

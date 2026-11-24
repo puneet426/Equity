@@ -12,14 +12,20 @@ const body = Hanken_Grotesk({ subsets: ["latin"], weight: ["400", "500", "600"],
 
 const desc = `CA Foundation, Intermediate and Final, and CSEET, CS Executive and Professional coaching in H Square Mall, Lalpur, Ranchi. ${D.GOOGLE_RATING} on Google from ${D.GOOGLE_REVIEWS} reviews.`;
 
+/* Share previews must load from the domain the site is served on: Vercel's production
+   domain (or the custom domain once it is added there), the branch URL on previews. */
+const HOST = process.env.VERCEL_ENV === "production" ? process.env.VERCEL_PROJECT_PRODUCTION_URL : process.env.VERCEL_BRANCH_URL || process.env.VERCEL_URL;
+const BASE = HOST ? `https://${HOST}` : "http://localhost:3000";
+const OG = { url: "/og.jpg", width: 1200, height: 630, alt: "Equity Classes, Ranchi: the 3D E book logo with the line Become a CA. Or a CS. Start in Ranchi." };
+
 export const metadata = {
-  metadataBase: new URL(D.SITE),
+  metadataBase: new URL(BASE),
   title: { default: "Equity Classes | CA & CS Coaching in Lalpur, Ranchi", template: "%s | Equity Classes, Ranchi" },
   description: desc,
   alternates: { canonical: "/" },
   icons: { icon: [{ url: "/favicon.ico", sizes: "any" }, { url: "/favicon.png", type: "image/png" }], apple: "/apple-touch-icon.png" },
-  openGraph: { type: "website", siteName: "Equity Classes", locale: "en_IN", images: ["/og.jpg"], description: desc },
-  twitter: { card: "summary_large_image", images: ["/og.jpg"] },
+  openGraph: { type: "website", siteName: "Equity Classes", locale: "en_IN", images: [OG], description: desc },
+  twitter: { card: "summary_large_image", images: [OG] },
   verification: { google: "fe1k1809DCJAvYMaVQtzkn2bsossO2tuWfnR9foXoaM" },
 };
 
@@ -27,7 +33,7 @@ export const viewport = { themeColor: "#16011f", width: "device-width", initialS
 
 const orgLd = {
   "@context": "https://schema.org", "@type": "EducationalOrganization", name: "Equity Classes", url: D.SITE + "/",
-  slogan: TAGLINE, telephone: D.PHONE_OFFICE, email: D.EMAIL, image: D.SITE + "/og.jpg",
+  slogan: TAGLINE, telephone: D.PHONE_OFFICE, email: D.EMAIL, image: BASE + "/og.jpg",
   address: { "@type": "PostalAddress", streetAddress: D.ADDRESS_1, addressLocality: "Ranchi", addressRegion: "Jharkhand", postalCode: "834001", addressCountry: "IN" },
   aggregateRating: { "@type": "AggregateRating", ratingValue: D.GOOGLE_RATING, reviewCount: D.GOOGLE_REVIEWS },
   sameAs: [D.INSTAGRAM, D.LINKTREE],

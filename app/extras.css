@@ -73,11 +73,6 @@
 .faq-item button:hover span { color: var(--gold); }
 .faq-grid .shead { margin-bottom: 1.4rem; }
 
-/* social icon colours */
-.social-ico { color: #fff; }
-.social--ph .social-ico { color: var(--on-gold); }
-.social--lt .social-ico { color: #10300f; }
-.social--ml .social-ico { color: #2a0336; }
 
 /* ---------------- enquiry form, upgraded ---------------- */
 .form-head { display: flex; justify-content: space-between; gap: 1rem; align-items: flex-start; }
@@ -211,7 +206,7 @@
 [data-theme="light"] .levels li, [data-theme="light"] .topper-stats div, [data-theme="light"] .vcard-links a, [data-theme="light"] .tm-faces {
   background: #ffffffa6; box-shadow: inset 0 1px 0 #fff, inset 0 0 0 1px #3203430f; }
 [data-theme="light"] .levels li:hover { background: #fff; }
-[data-theme="light"] .teach-row, [data-theme="light"] .ccard, [data-theme="light"] .faq-item, [data-theme="light"] .social {
+[data-theme="light"] .teach-row, [data-theme="light"] .ccard, [data-theme="light"] .faq-item {
   background: linear-gradient(160deg, #ffffffe6, #ffffff99); box-shadow: inset 0 1px 0 #fff, inset 0 0 0 1px #32034312, 0 10px 26px -20px #7a3fae88; }
 [data-theme="light"] .faq-item.is-open { background: linear-gradient(160deg, #fff, #f7eefe); box-shadow: inset 0 0 0 1px #f9c26a88, 0 16px 34px -22px #c47a15aa; }
 [data-theme="light"] .faq-item button i { background: #3203430f; }
@@ -260,3 +255,6 @@
 [data-theme="light"] .map { filter: none; }
 [data-theme="light"] .ring-floor { background: radial-gradient(closest-side, #c9a8ee66, transparent); }
 [data-theme="light"] .ring img, [data-theme="light"] .mate img, [data-theme="light"] .face img { box-shadow: 0 0 0 3px #e7a33f, 0 0 0 7px #f9c26a26, 0 14px 24px -12px #4a147088; }
+
+[data-theme="light"] .social { color: var(--gold-ink); background: #ffffffb3; box-shadow: inset 0 0 0 1.5px #c47a1559, 0 8px 20px -14px #7a3fae88; }
+[data-theme="light"] .social:hover, [data-theme="light"] .social:focus-visible { color: var(--on-gold); background: var(--grad-gold); box-shadow: inset 0 0 0 1.5px #f9c26a, 0 14px 30px -12px #c47a15aa; }

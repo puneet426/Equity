@@ -4,12 +4,12 @@ import { D, TAGLINE, HELLO, wa, tel } from "@/lib/site";
 import { Instagram, WhatsApp, Linktree, MapPin, Mail, Phone } from "./Icons";
 
 const SOCIALS = [
-  { label: "Instagram", sub: "@equityclasses", href: D.INSTAGRAM, Icon: Instagram, c: "ig" },
-  { label: "WhatsApp", sub: "87978 34974", href: `https://wa.me/${D.WA_ENQUIRY}`, Icon: WhatsApp, c: "wa" },
-  { label: "Call", sub: D.PHONE_OFFICE_SHOW, href: tel, Icon: Phone, c: "ph", self: true },
-  { label: "Email", sub: "Write to us", href: `mailto:${D.EMAIL}`, Icon: Mail, c: "ml", self: true },
-  { label: "Google Maps", sub: "H Square Mall", href: D.MAP_LINK, Icon: MapPin, c: "mp" },
-  { label: "Linktree", sub: "All our links", href: D.LINKTREE, Icon: Linktree, c: "lt" },
+  { label: "Instagram", sub: "@equityclasses", href: D.INSTAGRAM, Icon: Instagram },
+  { label: "WhatsApp", sub: "87978 34974", href: `https://wa.me/${D.WA_ENQUIRY}`, Icon: WhatsApp },
+  { label: "Call", sub: D.PHONE_OFFICE_SHOW, href: tel, Icon: Phone, self: true },
+  { label: "Email", sub: "Write to us", href: `mailto:${D.EMAIL}`, Icon: Mail, self: true },
+  { label: "Google Maps", sub: "H Square Mall", href: D.MAP_LINK, Icon: MapPin },
+  { label: "Linktree", sub: "All our links", href: D.LINKTREE, Icon: Linktree },
 ];
 
 export default function Footer() {
@@ -30,11 +30,10 @@ export default function Footer() {
           </div>
 
           <ul className="socials" aria-label="Find Equity Classes online">
-            {SOCIALS.map(({ label, sub, href, Icon, c, self }) => (
+            {SOCIALS.map(({ label, sub, href, Icon, self }) => (
               <li key={label}>
-                <a className={`social social--${c}`} href={href} {...(self ? {} : { target: "_blank", rel: "noopener" })}>
-                  <span className="social-ico"><Icon /></span>
-                  <span className="social-txt"><b>{label}</b><small>{sub}</small></span>
+                <a className="social" href={href} aria-label={`${label}: ${sub}`} title={label} {...(self ? {} : { target: "_blank", rel: "noopener" })}>
+                  <Icon />
                 </a>
               </li>
             ))}
