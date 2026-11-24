@@ -1,0 +1,467 @@
+{
+ "SITE": "https://equityclasses.in",
+ "PHONE_OFFICE": "+919288484448",
+ "PHONE_OFFICE_SHOW": "092884 84448",
+ "WA_ENQUIRY": "918797834974",
+ "EMAIL": "equityclassesranchi@gmail.com",
+ "INSTAGRAM": "https://www.instagram.com/equityclasses/",
+ "LINKTREE": "https://linktr.ee/equityclasses",
+ "ADDRESS_1": "H Square Mall, Unit 504, opposite Pranami Heights",
+ "ADDRESS_2": "Lalpur, Ranchi, Jharkhand 834001",
+ "ADDRESS_NOTE": "Next to Mocha",
+ "HOURS": "Mon to Sat, 10:30 AM to 7:00 PM",
+ "MAP_EMBED": "https://www.google.com/maps?q=H+Square+Mall,+504,+opposite+Pranami+Heights,+Lalpur,+Ranchi,+Jharkhand+834001&output=embed",
+ "MAP_LINK": "https://www.google.com/maps/search/?api=1&query=Equity+Classes+H+Square+Mall+Lalpur+Ranchi",
+ "GOOGLE_RATING": "5.0",
+ "GOOGLE_REVIEWS": 202,
+ "PASS_RATE": 86,
+ "LEGAL": "A unit of Equity Edutech Pvt. Ltd.",
+ "faculty": [
+  {
+   "id": "mona-mohta",
+   "name": "CS Mona Mohta",
+   "role": "Founder & Director",
+   "lead": true,
+   "experience": "7+ years teaching",
+   "expertise": "Law and Audit",
+   "short": "Founded Equity Classes and teaches Law and Audit. Students know her for a friendly, student-first approach.",
+   "linkedin": "https://linkedin.com/in/mona-mohta-044056346",
+   "bio": "CS Mona Mohta founded Equity Classes and teaches there herself. She has over seven years in the classroom and teaches Law and Audit. Students know her for a friendly, student-first approach: she learns who her students are, and her classes are informative and enjoyable in equal measure. The institute runs on the same idea, with engagement and mutual respect between teacher and student."
+  },
+  {
+   "id": "ashish-sultania",
+   "name": "Prof. Ashish Sultania",
+   "role": "Academic Head",
+   "lead": true,
+   "experience": "20 years teaching",
+   "expertise": "Accounts, Taxation and Costing",
+   "short": "Leads the academic side and teaches Accounts, Taxation and Costing. Has guided many students to top All-India Ranks.",
+   "bio": "Prof. Ashish Sultania has taught for two decades and leads the academic side of Equity Classes. He teaches Accounts, Taxation and Costing, and has guided many students to top All-India Ranks. Students come to him for his depth of subject knowledge and his high standards."
+  },
+  {
+   "id": "harsh-agarwal",
+   "name": "CA Harsh Agarwal",
+   "role": "Faculty",
+   "expertise": "Ind AS / AS and Financial Reporting",
+   "level": "CA Final",
+   "linkedin": "https://linkedin.com/in/caharsh0210",
+   "bio": "A practising Chartered Accountant, CA Harsh Agarwal teaches Indian Accounting Standards (Ind AS) and Financial Reporting at the CA Final level. He brings the rigour of practice into the classroom, with a focus on how financial statements are actually interpreted and presented. He teaches for understanding rather than rote learning, so students can handle the scenarios the exam throws at them."
+  },
+  {
+   "id": "vishal-chandra",
+   "name": "CA Vishal Chandra",
+   "role": "Faculty",
+   "qualifications": "FCA, CMA, B.Com (Hons.)",
+   "experience": "10+ years in practice",
+   "expertise": "Taxation and Audit",
+   "level": "CA Final",
+   "linkedin": "https://linkedin.com/in/ca-vishal-chandra-9620b17b",
+   "bio": "CA Vishal Chandra is qualified as both a Chartered Accountant and a Cost & Management Accountant, with over a decade of practical work in Taxation and Audit. He teaches CA Final, where he connects theory to real cases and turns the hardest standards into logical, scoring answers."
+  },
+  {
+   "id": "shankar-kinger",
+   "name": "Shankar Kinger",
+   "role": "Faculty",
+   "experience": "23+ years teaching",
+   "expertise": "Mathematics",
+   "level": "CA Foundation, CSEET",
+   "bio": "Shankar Kinger has taught Mathematics for over 23 years and has taken a great many students through the quantitative papers of CA Foundation and CSEET. He teaches interactively and gives personal attention, so students who fear maths come out of his classes confident."
+  },
+  {
+   "id": "himanshu-chitlangia",
+   "name": "Himanshu Chitlangia",
+   "role": "Faculty",
+   "qualifications": "MBA (Silver Medalist)",
+   "experience": "10+ years (8 teaching, 2 corporate)",
+   "expertise": "Business Environment, Capital Markets and Strategic Management",
+   "linkedin": "https://linkedin.com/in/himanshu-chitlangia-610205107",
+   "bio": "Himanshu Chitlangia is an MBA silver medalist with ten years of experience: two in the corporate sector and eight in teaching. He teaches Business Environment, Capital Markets and Strategic Management through applied examples, so students learn to think the way real businesses are run."
+  },
+  {
+   "id": "shubham-modi",
+   "name": "CA Shubham Modi",
+   "role": "Faculty",
+   "qualifications": "FCA, CS, B.Com (A&F), DISA",
+   "expertise": "Financial subjects",
+   "bio": "CA Shubham Modi has years of experience as faculty with ICAI and knows the hardest professional papers closely. His teaching is clear and high-energy, and he is known for breaking abstract topics into simple steps that students can act on."
+  },
+  {
+   "id": "shubham-kataruka",
+   "name": "Adv. Shubham Kataruka",
+   "role": "Faculty",
+   "qualifications": "B.A. LL.B. (Hons.), LL.M. Finance and Corporate Law",
+   "expertise": "Law: commercial, constitutional and administrative",
+   "linkedin": "https://linkedin.com/in/shubham-kataruka-8a2910110",
+   "bio": "Adv. Shubham Kataruka practises at the Jharkhand High Court in commercial litigation, arbitration and writ matters. He holds an LL.M. in Corporate and Financial Law from Jindal Global Law School and a B.A. LL.B. (Hons.) from Nirma University. He has worked on public interest litigation covering social security, environmental protection and human rights, and is visiting faculty at ICFAI University, Ranchi, where he lectures on Constitutional and Administrative Law. In class he turns dense legal text into clear reasoning."
+  },
+  {
+   "id": "shikha-agarwal",
+   "name": "CS Shikha Agarwal",
+   "role": "Faculty",
+   "qualifications": "BBA, CS, LLB",
+   "expertise": "Company Law and corporate compliance",
+   "linkedin": "https://linkedin.com/in/shikha-jain-agarwal-881619243",
+   "bio": "CS Shikha Agarwal works across corporate compliance and regulatory affairs. Her classes are interactive, and she has a knack for making dense legal concepts simple. Her background in both law and management makes her a strong guide for Company Law."
+  },
+  {
+   "id": "minakshi-agarwal",
+   "name": "CS Minakshi Agarwal",
+   "role": "Faculty",
+   "expertise": "Corporate compliance and governance",
+   "bio": "CS Minakshi Agarwal teaches corporate compliance and governance for the CS course. Her structured teaching gives students clarity on regulatory subjects that are easy to get lost in."
+  },
+  {
+   "id": "manjusha-jaiswal",
+   "name": "Manjusha Jaiswal",
+   "role": "Faculty",
+   "expertise": "Professional courses",
+   "bio": "Manjusha Jaiswal is a valued member of the Equity Classes faculty, known for her commitment to her students' progress. Her approachable teaching style makes her a favourite in class."
+  }
+ ],
+ "achievers": [
+  {
+   "name": "Rudra Raj Dawn",
+   "slug": "rudra-ca",
+   "course": "CA",
+   "note": "State Topper, CA Foundation"
+  },
+  {
+   "name": "Himanshi Kejriwal",
+   "slug": "himanshi",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Palak Jalan",
+   "slug": "palak",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Aditya Raj",
+   "slug": "aditya-raj",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Sakshi Manjhi",
+   "slug": "sakshi-ca",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Akshra Saraswat",
+   "slug": "akshra",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Pratham Patel",
+   "slug": "pratham-ca",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Aryan Sodhani",
+   "slug": "aryan-sodhani",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Varsha",
+   "slug": "varsha",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Anuj Prasad",
+   "slug": "anuj-ca",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Aryan Kumar",
+   "slug": "aryan-kumar",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Pavika Vijay",
+   "slug": "pavika-ca",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Simon",
+   "slug": "simon-ca",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Shreya Agarwal",
+   "slug": "shreya-agarwal",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Kritiwas Shahdeo",
+   "slug": "kritiwas",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Akshay Poddar",
+   "slug": "akshay-poddar",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Gaurav Kumar",
+   "slug": "gaurav-kumar",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Isha",
+   "slug": "isha",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Tanushka Singh",
+   "slug": "tanushka-ca",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Mudit",
+   "slug": "mudit",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Hemesh",
+   "slug": "hemesh",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Vedant",
+   "slug": "vedant",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Utkarsh Anand",
+   "slug": "utkarsh",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Khushi Dokania",
+   "slug": "khushi",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Utpal Kumar",
+   "slug": "utpal",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Priyani Ghosh",
+   "slug": "priyani",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Kavya Khaitan",
+   "slug": "kavya",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Gunjan Saboo",
+   "slug": "gunjan",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Dolly Singh",
+   "slug": "dolly-singh",
+   "course": "CA",
+   "note": ""
+  },
+  {
+   "name": "Aanchal",
+   "slug": "aanchal",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Rishu",
+   "slug": "rishu",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Amrit Kaur",
+   "slug": "amrit-kaur",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Shweta",
+   "slug": "shweta",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Shubhshri Sahani",
+   "slug": "shubhshri",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Neha Jha",
+   "slug": "neha-jha",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Pratistha Gupta",
+   "slug": "pratistha",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Anjana",
+   "slug": "anjana",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Aayushi Singh",
+   "slug": "aayushi",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Swastik Dubey",
+   "slug": "swastik",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Shristi Ranjan",
+   "slug": "shristi-cs",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Tanya",
+   "slug": "tanya",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Manaswi Gupta",
+   "slug": "manaswi-gupta",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Kanika Bijawat",
+   "slug": "kanika-bijawat",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Aditya Krishna",
+   "slug": "aditya-krishna-cs",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Kajal Sahu",
+   "slug": "kajal-sahu",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Riddhi Kalwar",
+   "slug": "riddhi",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Akansha Kumari",
+   "slug": "akansha-kumari",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Sheetal Kumari",
+   "slug": "sheetal-kumari",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Manya Goel",
+   "slug": "manya-goel",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Sharan Chattaraj",
+   "slug": "sharan",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Hardeep",
+   "slug": "hardeep",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Manish Chaubey",
+   "slug": "manish-chaubey",
+   "course": "CS",
+   "note": ""
+  },
+  {
+   "name": "Shreya Sharma",
+   "slug": "shreya-sharma",
+   "course": "CS",
+   "note": ""
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Urvi Mitra",
+   "text": "Equity Classes changed my perception. The environment is so friendly and competitive at the same time. Best classes in Ranchi for CA, CS or CMA."
+  },
+  {
+   "name": "Kumar Rakshit",
+   "text": "The teachers here are knowledgeable, supportive, and always ready to clear every doubt with patience. The study material is properly structured."
+  },
+  {
+   "name": "Shubham Burman",
+   "text": "Excellent CS coaching with clear concepts. I am having a great experience studying in this institute, the vibe and atmosphere are perfect for learning."
+  },
+  {
+   "name": "Nidhi Deep",
+   "text": "The sessions were highly informative, well-structured, and academically enriching. Equity classes for CS are very helpful and conceptually strong."
+  },
+  {
+   "name": "Akshat Manpuria",
+   "text": "Excellent conceptual clarity and supportive faculty! My experience so far has been outstanding. The biggest strength is the teaching methodology."
+  },
+  {
+   "name": "Nishthaa Poddar",
+   "text": "Equity classes have given me the confidence and motivation to study. Teachers are very friendly and make every course very easy. Undoubtedly the best!"
+  }
+ ]
+}
